@@ -1,0 +1,316 @@
+body {
+	color:#000;
+	font-family: 'Roboto', sans-serif;
+	font-size-adjust: auto;
+}
+
+table {
+	width: 90%;
+	margin:2% auto;
+	border-radius: 10px;
+}
+
+table td {
+	border: 1px dashed rgba(24, 24, 24, 0.38);
+	border-radius: 5px;
+}
+
+table tr td a {
+	text-decoration: none;
+	font-size: 16px;
+
+}
+
+table tr td a:hover {
+	text-decoration: none;
+	color: #fff;
+
+}
+
+table tr td a:visited {
+	text-decoration: none;
+	font-size: 14px;
+	color: #fff;
+}
+
+.imgbutton {
+	width: 4.5%;
+}
+
+.van {
+	text-align: center;
+	text-align: -webkit-center;
+	text-align: -moz-center;
+	margin: 5% auto;
+}
+	
+.hiper {
+	text-align: center;
+	text-align: -moz-center;
+	text-align: -webkit-center;
+	text-decoration: none;
+	margin: auto;
+}
+
+.hiper:visited {
+	text-decoration: none;
+	color: #000;
+}
+
+.button {
+	text-decoration: none;
+	margin-top: 1%;
+}
+
+#button {
+	text-decoration: none;
+	color: #000;
+}
+
+#button:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+h2 {
+	color: #000
+}
+
+form {
+	width: 35%;
+	margin: auto;
+}
+
+.area {
+	width: 165px;
+	resize: none; 	
+}
+
+.title {
+	text-align: -webkit-center;
+	text-align: -moz-center;
+	text-align: -o-center;
+	text-align: center;
+	color: #000;
+}
+
+.mini {
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	text-align: -webkit-center;
+	text-align: -moz-center;
+}
+
+.img {
+	width: 175px;
+	height: 225px;
+	border-radius: 5px;
+	margin: auto;
+	display: block;
+}
+
+.img:hover {
+	opacity: 0.5;
+	transition:opacity 0.5s linear;
+}
+
+/** toolbar **/
+
+.menu {
+	width: 	90%;
+	margin-left: 3.5%;
+	z-index: 10
+}
+
+ul, ol {
+	list-style:none;
+	display: flex;
+	-webkit-padding-start: 5%;
+	-moz-padding-start: 5%;
+	-moz-margin-after: 0em;
+	margin-bottom: 0%;
+}
+
+.toolbar > li {
+	float:left;
+	width: 23.68%;
+}
+
+.toolbar li a {
+	background-color: #4D58A0;
+	color:#fff;
+	text-decoration:none;
+	padding:10px 12px;
+	display:block;
+}
+
+.toolbar li a:hover {
+	background-color:#434343;
+}
+
+.toolbar li ul {
+	display:none;
+	position:absolute;
+	min-width:140px;
+}
+
+.toolbar li:hover > ul {
+	display:block;
+}
+
+.toolbar li ul li {
+	position:relative;
+	z-index: 1000;
+}
+
+.wrapper {
+	position: relative;
+	max-width: 62%;
+	width: 100%;
+	padding: 0 50px;
+	margin: 0 auto;
+	margin-top: 3.5%;
+}
+
+/** footer **/
+
+footer {
+	width: 90%;
+	height: 200px;
+	margin: auto;
+    background-color: #4D58A0;
+	border-radius: 10px;
+	align-items: baseline;
+	margin-top: 50px;
+	position: relative;
+}
+
+#subfooter {
+	width: 300px;
+	height: 180px;
+	float: left;
+}
+
+#subfooter iframe {
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+#subfooter img {
+	width: 25px;
+	height: 25px;
+	margin: 15px 10px 10px 25px;
+}
+
+#subfooter span {
+	color: #FFF;
+}
+
+#subfooter a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+#subfooter a:visited {
+	color: #FFF;
+}
+
+.local {
+	position: absolute;
+	margin: 20px 0px 0px 0px;
+}
+
+/** 3D thumb **/
+
+.thumb {
+	width: 280px;
+	height: 360px;
+	margin: 50px auto;
+	perspective: 1000px;
+	margin-bottom: 120px;
+}
+
+.thumb a {
+	display: block; 
+	width: 100%; 
+	height: 100%;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+	background-size: 0, cover;
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.thumb:hover a {
+	transform: rotateX(80deg); 
+	transform-origin: bottom;
+}
+
+.thumb a:after {
+	content: ''; 
+	position: absolute; 
+	left: 0;
+	bottom: 0; 
+	width: 100%; 
+	height: 36px;
+	background: inherit; 
+	background-size: cover, cover;
+	background-position: bottom;
+	transform: rotateX(90deg); 
+	transform-origin: bottom;
+}
+
+.thumb a span {
+	color: #fff;
+	background: rgba(56, 56, 56, 0.89);
+	text-transform: uppercase;
+	position: absolute; 
+	top: 100%; 
+	left: 0; 
+	width: 100%;
+	font: bold 14px/38px Montserrat; 
+	text-align: center;
+	text-align: -moz-center;
+	transform: rotateX(-89.99deg); 
+	transform-origin: top;
+	z-index: 2;
+}
+
+.thumb a:before {
+	content: ''; 
+	position: absolute; 
+	top: 0; 
+	left: 0;
+	width: 100%; 
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s; 
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+	-webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	-webkit-transform-origin: bottom;
+	-moz-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	-moz-transform-origin: bottom;
+}
+
+.thumb:hover a:before {
+	opacity: 1;
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+	-moz-transform: rotateX(0) translateZ(-60px) scale(0.85);
+	-webkit-transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+.back {
+	position: absolute;
+	padding-left: 30%;
+	padding-top: 15%;
+	padding-right: 30%;
+}
+
+/** Christian Falcon **/
